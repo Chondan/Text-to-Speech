@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    margin-top: 10px;
+    text-align: center;
+    font-size: large;
+}
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+input {
+    margin: 10px 0;
+    height: 50px;
+}
+select {
+    outline: none;
+    margin: 10px 0;
+}
+textarea {
+    text-indent: 5%;
+    padding: 5px;
+}
+div.control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input[type=range] {
+    width: 100%;
+}
+@media screen and (max-width: 800px) {
+    form {
+        width: 100%;
+    }
+}

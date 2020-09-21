@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Text to Speech</title>
+</head>
+<body>
+    <header>Text to Speech</header>
+    <form id="speech" action="">
+        <label for="lang">Language</label>
+        <select name="lang" id="lang-supported"></select>
+        <div class="control">
+            <div id="rate-value">Rate: 1</div><input type="range" name="rate" id="rate" min="0" max="10" value="1">
+            <div id="pitch-value">Pitch: 1</div><input type="range" name="pitch" id="pitch" min="0" max="2" value="1">
+        </div>
+        <textarea name="" id="text-input" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
